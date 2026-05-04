@@ -35,7 +35,12 @@ jobs:
           OPENAI_MODEL: ${{ secrets.OPENAI_MODEL || 'gpt-5-mini' }}
           DISCORD_WEBHOOK_URL: ${{ secrets.DISCORD_WEBHOOK_URL }}
           WATCHLIST: ${{ secrets.WATCHLIST }}
+          US_MARKET_SYMBOLS: ${{ secrets.US_MARKET_SYMBOLS || 'SPY,QQQ,DIA,IWM,^VIX,^TNX' }}
+          KR_MARKET_SYMBOLS: ${{ secrets.KR_MARKET_SYMBOLS || 'EWY,^KS11,^KQ11,USDKRW=X' }}
+          SECTOR_SYMBOLS: ${{ secrets.SECTOR_SYMBOLS || 'XLK,XLE,XLF,XLV,XLY,XLI,XLP,XLB,XLU,VNQ,SMH' }}
           MAX_ARTICLES_PER_SYMBOL: ${{ secrets.MAX_ARTICLES_PER_SYMBOL || '5' }}
+          MAX_MARKET_ARTICLES_PER_SYMBOL: ${{ secrets.MAX_MARKET_ARTICLES_PER_SYMBOL || '3' }}
+          MAX_SECTOR_ARTICLES_PER_SYMBOL: ${{ secrets.MAX_SECTOR_ARTICLES_PER_SYMBOL || '2' }}
           REQUEST_TIMEOUT_SECONDS: ${{ secrets.REQUEST_TIMEOUT_SECONDS || '20' }}
         run: python -m stock_news_bot.main
 
