@@ -1,4 +1,11 @@
 {
+  "http://www.etf.com/sections/daily-etf-flows/us-equities-remain-king-diversification-plays-grow?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss": {
+    "published_at": "2026-05-01T21:00:26+00:00",
+    "sent_at": "2026-05-04T05:15:04.580107+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "QQQ",
+    "title": "U.S. Equities Remain King but Diversification Plays Grow"
+  },
   "https://247wallst.com/investing/2026/04/22/russell-2000-extends-gains-as-risk-on-trade-buoys-small-cap-sentiment/?.tsrc=rss": {
     "published_at": "2026-04-22T14:30:24+00:00",
     "sent_at": "2026-04-23T05:57:05.870719+00:00",
@@ -41,6 +48,48 @@
     "symbol": "QQQ",
     "title": "VIX Creeps Toward 20 as Iran Fears and Tesla’s Whipsaw Rattle Nerves"
   },
+  "https://247wallst.com/investing/2026/05/01/gold-faces-headwinds-from-higher-yields-and-fading-fear-but-year-end-targets-shine/?.tsrc=rss": {
+    "published_at": "2026-05-01T15:07:04+00:00",
+    "sent_at": "2026-05-04T05:15:04.580107+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "QQQ",
+    "title": "Gold Faces Headwinds From Higher Yields and Fading Fear but Year-End Targets Shine"
+  },
+  "https://247wallst.com/investing/2026/05/01/the-cboe-vix-falls-to-16-level-as-risk-on-trade-returns-to-market/?.tsrc=rss": {
+    "published_at": "2026-05-01T14:23:07+00:00",
+    "sent_at": "2026-05-04T05:15:04.580107+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "QQQ",
+    "title": "The CBOE VIX Falls to 16 Level as Risk-On Trade Returns to Market"
+  },
+  "https://247wallst.com/investing/2026/05/02/amazon-and-tesla-drive-one-third-of-fdis-as-u-s-spending-surges-despite-recession-level-sentiment/?.tsrc=rss": {
+    "published_at": "2026-05-02T14:56:09+00:00",
+    "sent_at": "2026-05-04T05:15:36.393823+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "SPY",
+    "title": "Amazon and Tesla Drive One-Third of FDIS as U.S. Spending Surges Despite Recession-Level Sentiment"
+  },
+  "https://247wallst.com/investing/2026/05/02/concentration-risk-high-as-top-two-stocks-steer-u-s-communication-services-etf-performance/?.tsrc=rss": {
+    "published_at": "2026-05-02T14:58:07+00:00",
+    "sent_at": "2026-05-04T05:15:36.393823+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "SPY",
+    "title": "Concentration Risk High as Top Two Stocks Steer U.S. Communication Services ETF Performance"
+  },
+  "https://247wallst.com/investing/2026/05/03/why-gold-wont-save-you-in-a-real-crisis-but-stocks-will/?.tsrc=rss": {
+    "published_at": "2026-05-03T15:51:27+00:00",
+    "sent_at": "2026-05-04T05:15:36.393823+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "SPY",
+    "title": "Why Gold Won’t Save You in a Real Crisis (But Stocks Will)"
+  },
+  "https://247wallst.com/investing/2026/05/03/why-growth-investors-are-ditching-felg-for-the-nasdaq-100s-9-74-edge/?.tsrc=rss": {
+    "published_at": "2026-05-03T12:30:25+00:00",
+    "sent_at": "2026-05-04T05:15:04.580107+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "QQQ",
+    "title": "Why Growth Investors Are Ditching FELG for the NASDAQ-100’s 9.74% Edge"
+  },
   "https://247wallst.com/personal-finance/2026/04/22/jeffrey-hirsch-predicts-dow-62430-by-2030-heres-what-that-means-for-your-portfolio/?.tsrc=rss": {
     "published_at": "2026-04-22T15:07:06+00:00",
     "sent_at": "2026-04-23T05:59:37.903360+00:00",
@@ -54,6 +103,27 @@
     "source": "Yahoo Finance RSS",
     "symbol": "SPY",
     "title": "Suze Orman Says Put 50% in VOO. Here’s Why She’s Right"
+  },
+  "https://247wallst.com/personal-finance/2026/05/03/a-300000-annuity-guarantees-1900-a-month-for-life-but-here-is-what-retirees-are-giving-up/?.tsrc=rss": {
+    "published_at": "2026-05-03T15:07:33+00:00",
+    "sent_at": "2026-05-04T05:15:36.393823+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "SPY",
+    "title": "A $300,000 Annuity Guarantees $1,900 a Month for Life, but Here Is What Retirees Are Giving Up"
+  },
+  "https://beincrypto.com/ai-capex-semiconductor-etfs-not-crypto/?.tsrc=rss": {
+    "published_at": "2026-05-03T19:30:26+00:00",
+    "sent_at": "2026-05-04T05:15:52.407111+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "GOOGL",
+    "title": "AI Capex Boom Drives Hottest ETF Trade Into Semiconductors, Not Crypto"
+  },
+  "https://finance.yahoo.com/economy/policy/articles/9-trillion-pouring-american-manufacturing-220000435.html?.tsrc=rss": {
+    "published_at": "2026-05-03T22:00:00+00:00",
+    "sent_at": "2026-05-04T05:15:21.915824+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "AAPL",
+    "title": "$9 Trillion Is Pouring Into American Manufacturing — And It’s Just Getting Started"
   },
   "https://finance.yahoo.com/m/3b54e766-1bc2-350b-9f36-d1cc1b7d9a57/nasdaq-slides.-earnings-fail.html?.tsrc=rss": {
     "published_at": "2026-04-23T20:01:43+00:00",
@@ -69,12 +139,40 @@
     "symbol": "NVDA",
     "title": "Review & Preview: Earnings Storm"
   },
+  "https://finance.yahoo.com/m/cfdf164e-e24a-366b-9d8b-b0274f05ba94/dow-jones-futures%3A-trump-says.html?.tsrc=rss": {
+    "published_at": "2026-05-04T04:27:18+00:00",
+    "sent_at": "2026-05-04T05:15:21.915824+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "AAPL",
+    "title": "Dow Jones Futures: Trump Says U.S. To 'Guide' Ships Through Hormuz"
+  },
+  "https://finance.yahoo.com/m/fcecbae5-5b02-3923-a626-74dce62f062d/intel-stock-was-up-115%25-in.html?.tsrc=rss": {
+    "published_at": "2026-05-01T20:33:00+00:00",
+    "sent_at": "2026-05-04T05:15:36.393823+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "SPY",
+    "title": "Intel Stock Was Up 115% in April. How to Play It With Options Now."
+  },
   "https://finance.yahoo.com/markets/stocks/articles/apple-80-trillion-thats-shadow-233105955.html?.tsrc=rss": {
     "published_at": "2026-04-22T23:31:05+00:00",
     "sent_at": "2026-04-23T05:58:18.587092+00:00",
     "source": "Yahoo Finance RSS",
     "symbol": "AAPL",
     "title": "Apple At $80 Trillion? That's The Shadow The New CEO Steps Into"
+  },
+  "https://finance.yahoo.com/markets/stocks/articles/apple-changing-rules-tim-cook-220119030.html?.tsrc=rss": {
+    "published_at": "2026-05-03T22:01:19+00:00",
+    "sent_at": "2026-05-04T05:15:21.915824+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "AAPL",
+    "title": "Apple Is Changing The Rules Right Before Tim Cook Exits"
+  },
+  "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-advance-us-171148684.html?.tsrc=rss": {
+    "published_at": "2026-05-01T17:11:48+00:00",
+    "sent_at": "2026-05-04T05:15:04.580107+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "QQQ",
+    "title": "Exchange-Traded Funds Advance as US Equities Rise After Midday Friday"
   },
   "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-131452787.html?.tsrc=rss": {
     "published_at": "2026-04-23T13:14:52+00:00",
@@ -132,6 +230,13 @@
     "symbol": "NVDA",
     "title": "Xanadu (XNDU) Soars 52% on Nvidia Quantum Backing"
   },
+  "https://finance.yahoo.com/markets/world-indices/articles/seoul-taipei-hit-records-asian-032149912.html?.tsrc=rss": {
+    "published_at": "2026-05-04T03:21:49+00:00",
+    "sent_at": "2026-05-04T05:15:21.915824+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "AAPL",
+    "title": "Seoul, Taipei hit records as Asian stocks track Wall St tech rally"
+  },
   "https://finance.yahoo.com/sectors/technology/articles/ai-brings-foxconn-chance-cut-210007424.html?.tsrc=rss": {
     "published_at": "2026-04-23T21:00:07+00:00",
     "sent_at": "2026-04-24T02:52:55.041008+00:00",
@@ -146,12 +251,26 @@
     "symbol": "GOOGL",
     "title": "Allbirds Is Becoming 'NewBird AI' — Is This the Wildest Pivot Yet?"
   },
+  "https://finance.yahoo.com/sectors/technology/articles/elon-musks-space-ai-vision-003114111.html?.tsrc=rss": {
+    "published_at": "2026-05-04T00:31:14+00:00",
+    "sent_at": "2026-05-04T05:15:52.407111+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "GOOGL",
+    "title": "Elon Musk's Space AI Vision Gets Boost As Sundar Pichai Backs Data Centers In Orbit"
+  },
   "https://finance.yahoo.com/sectors/technology/articles/icekredit-cgo-kong-chinang-joins-040100300.html?.tsrc=rss": {
     "published_at": "2026-04-23T04:01:00+00:00",
     "sent_at": "2026-04-23T06:04:00.062020+00:00",
     "source": "Yahoo Finance RSS",
     "symbol": "GOOGL",
     "title": "IceKredit’s CGO Kong Chinang Joins GrabX & AI Forward Summit in Jakarta, Advocates Tripartite Collaboration for Responsible AI in ASEAN"
+  },
+  "https://finance.yahoo.com/sectors/technology/articles/mediatek-hires-former-tsmc-executive-030028783.html?.tsrc=rss": {
+    "published_at": "2026-05-04T03:00:28+00:00",
+    "sent_at": "2026-05-04T05:14:48.480473+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "NVDA",
+    "title": "MediaTek hires former TSMC executive to boost AI chip packaging"
   },
   "https://finance.yahoo.com/sectors/technology/articles/meta-plans-10-layoffs-ai-193633862.html?.tsrc=rss": {
     "published_at": "2026-04-23T23:32:30+00:00",
@@ -257,6 +376,41 @@
     "source": "Yahoo Finance RSS",
     "symbol": "NVDA",
     "title": "Why Molina Healthcare Stock Rocketed 14% Higher Today"
+  },
+  "https://www.fool.com/investing/2026/05/03/3-surprising-quantum-computing-stocks-robinhood-in/?.tsrc=rss": {
+    "published_at": "2026-05-04T01:33:00+00:00",
+    "sent_at": "2026-05-04T05:14:48.480473+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "NVDA",
+    "title": "3 Surprising Quantum Computing Stocks Robinhood Investors Love"
+  },
+  "https://www.fool.com/investing/2026/05/03/bull-vs-bear-is-taiwan-semiconductor-manufacturing/?.tsrc=rss": {
+    "published_at": "2026-05-04T03:45:00+00:00",
+    "sent_at": "2026-05-04T05:14:48.480473+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "NVDA",
+    "title": "Bull vs. Bear: Is Taiwan Semiconductor Manufacturing Stock a Buy or Sell?"
+  },
+  "https://www.fool.com/investing/2026/05/03/this-undertheradar-grid-infrastructure-powerhouse/?.tsrc=rss": {
+    "published_at": "2026-05-04T00:04:00+00:00",
+    "sent_at": "2026-05-04T05:15:21.915824+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "AAPL",
+    "title": "This Under‑the‑Radar Grid Infrastructure Powerhouse Could Be a Generational Wealth Builder for Patient Investors"
+  },
+  "https://www.fool.com/investing/2026/05/03/why-general-dynamics-stock-is-up/?.tsrc=rss": {
+    "published_at": "2026-05-04T02:55:32+00:00",
+    "sent_at": "2026-05-04T05:14:48.480473+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "NVDA",
+    "title": "Why General Dynamics Stock Is Rising"
+  },
+  "https://www.fool.com/investing/2026/05/04/dont-buy-hyperliquid-until-this-happens/?.tsrc=rss": {
+    "published_at": "2026-05-04T04:35:00+00:00",
+    "sent_at": "2026-05-04T05:14:48.480473+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "NVDA",
+    "title": "Don't Buy Hyperliquid If This Happens"
   },
   "https://www.marketbeat.com/instant-alerts/intel-q1-earnings-call-highlights-2026-04-23/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
     "published_at": "2026-04-23T22:36:11+00:00",
