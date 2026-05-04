@@ -1,0 +1,83 @@
+# Stock News Discord Bot
+
+관심 종목의 Yahoo Finance RSS 뉴스를 가져와 한국어로 요약하고, Discord Webhook으로 전송하는 프로젝트입니다.
+
+## 이 구조의 유효성 판단
+
+전체 구조는 MVP로 충분히 유효합니다. 다만 한 가지 보완이 꼭 필요합니다.
+
+- `Yahoo Finance RSS 수집`: 빠르게 시작하기 좋은 소스입니다.
+- `OpenAI 요약/판별`: 기사 본문을 한국어 3줄 요약 + 호재/악재/중립 판별로 처리하기 좋습니다.
+- `JSON 중복 제거`: 로컬 실행에는 적합합니다.
+- `Discord Webhook 전송`: 구현이 단순하고 운영하기 쉽습니다.
+- `GitHub Actions 자동화`: 정시 실행에 적합합니다.
+
+중요한 보완점:
+
+- GitHub Actions는 실행할 때마다 새 환경을 쓰므로, 중복 제거용 JSON을 저장소에 다시 커밋하지 않으면 이전 기록이 유지되지 않습니다.
+- 이 프로젝트는 그 문제를 해결하기 위해 `data/sent_articles.json`을 워크플로우에서 자동 커밋하도록 구성했습니다.
+
+## 폴더 구조
+
+```text
+.
+├── .env.example
+├── .github/workflows/run-bot.yml
+├── data/sent_articles.json
+├── pyproject.toml
+├── README.md
+└── src/stock_news_bot
+    ├── __init__.py
+    ├── config.py
+    ├── dedupe.py
+    ├── fetcher.py
+    ├── main.py
+    ├── notifier.py
+    └── summarizer.py
+```
+
+## 빠른 시작
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+pip install -e .
+cp .env.example .env
+python -m stock_news_bot.main
+```
+
+## 환경변수
+
+- `OPENAI_API_KEY`: OpenAI API 키
+- `OPENAI_MODEL`: 사용할 모델명. 기본값 예시는 `gpt-5-mini`
+- `DISCORD_WEBHOOK_URL`: Discord Incoming Webhook URL
+- `WATCHLIST`: 쉼표로 구분한 관심 종목. 예: `NVDA,QQQ,TSLA`
+- `MAX_ARTICLES_PER_SYMBOL`: 종목당 최대 처리 기사 수
+- `REQUEST_TIMEOUT_SECONDS`: HTTP 요청 타임아웃
+
+## GitHub Actions 설정
+
+GitHub 저장소의 `Settings > Secrets and variables > Actions`에 아래 시크릿을 등록하세요.
+
+- `OPENAI_API_KEY`
+- `OPENAI_MODEL`
+- `DISCORD_WEBHOOK_URL`
+- `WATCHLIST`
+- `MAX_ARTICLES_PER_SYMBOL`
+- `REQUEST_TIMEOUT_SECONDS`
+
+현재 워크플로우는 `매시 정각 UTC` 기준으로 실행되도록 되어 있습니다.
+
+한국 시간 기준으로 매시간에 맞추고 싶다면, GitHub Actions의 cron이 UTC 기준이라는 점을 감안해 조정하세요.
+
+## 설계 메모
+
+- Yahoo Finance RSS 링크 형식은 `https://feeds.finance.yahoo.com/rss/2.0/headline?s=NVDA&region=US&lang=en-US`
+- RSS 항목은 제목/링크 중심이라 본문 추출은 기사 링크 페이지를 추가 요청해 수행합니다.
+- 본문 추출이 실패하면 RSS 요약 텍스트를 폴백으로 사용합니다.
+- 중복 키는 기사 URL 기준입니다.
+
+## 참고
+
+- OpenAI는 신규 프로젝트에 Responses API 사용을 권장합니다: https://platform.openai.com/docs/guides/migrate-to-responses
+- GitHub Actions schedule은 UTC cron 문법을 사용합니다: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows

@@ -1,0 +1,2 @@
+[console_scripts]
+stock-news-bot = stock_news_bot.main:main
