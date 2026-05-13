@@ -23,6 +23,7 @@ class MarketOverviewResult:
     summary_lines: list[str]
     us_market: str
     kr_market: str
+    exchange_rate: str
     key_driver: str
     risk_factor: str
 
@@ -90,10 +91,11 @@ def summarize_market_overview(
 요구사항:
 1. 오늘 시장 전체 흐름을 한국어 한 줄 제목으로 정리합니다.
 2. 한국어 3줄 요약을 작성합니다.
-3. 미국 시장 흐름을 한 문장으로 정리합니다.
-4. 한국 시장 흐름을 한 문장으로 정리합니다.
-5. 오늘 핵심 동인 1개와 주요 리스크 1개를 각각 한 문장으로 정리합니다.
-6. 과장 없이 사실 중심으로 정리하고, 기사 간 충돌이 있으면 보수적으로 표현합니다.
+3. 미국 시장 흐름을 정리할 때, 구체적인 지수(S&P 500, 나스닥 등) 변화와 주요 경제 지표를 포함하여 깊이 있게 2~3문장으로 분석합니다.
+4. 한국 시장 흐름을 정리할 때, 코스피/코스닥의 유의미한 급등락 등 시장에 큰 영향을 미치는 지표 변화가 있다면 반드시 포함하여 2~3문장으로 구체적으로 분석합니다.
+5. 뉴스에 나타난 원/달러 환율 동향을 파악하여 한 문장으로 정리합니다. (환율 정보는 고정으로 출력합니다)
+6. 오늘 핵심 동인 1개와 주요 리스크 1개를 각각 구체적인 이유와 함께 한 문장으로 정리합니다.
+7. 과장 없이 사실 중심으로 정리하고, 기사 간 충돌이 있으면 보수적으로 표현합니다.
 
 반환 JSON 스키마:
 {{
@@ -101,6 +103,7 @@ def summarize_market_overview(
   "summary_lines": ["...", "...", "..."],
   "us_market": "...",
   "kr_market": "...",
+  "exchange_rate": "...",
   "key_driver": "...",
   "risk_factor": "..."
 }}
@@ -118,6 +121,7 @@ def summarize_market_overview(
         summary_lines=_parse_summary_lines(parsed),
         us_market=_require_text(parsed, "us_market"),
         kr_market=_require_text(parsed, "kr_market"),
+        exchange_rate=_require_text(parsed, "exchange_rate"),
         key_driver=_require_text(parsed, "key_driver"),
         risk_factor=_require_text(parsed, "risk_factor"),
     )

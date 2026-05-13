@@ -12,27 +12,44 @@ Requires-Dist: trafilatura>=1.9.0
 
 # Stock News Discord Bot
 
-관심 종목의 Yahoo Finance RSS 뉴스를 가져와 한국어로 요약하고, Discord Webhook으로 전송하는 프로젝트입니다.
+관심 종목 뉴스, 미국/한국 시장 흐름, 강한 섹터/약한 섹터를 자동으로 요약해 Discord로 보내는 프로젝트입니다.
 
-## 이 구조의 유효성 판단
+## 현재 기능
 
-전체 구조는 MVP로 충분히 유효합니다. 다만 한 가지 보완이 꼭 필요합니다.
+이 프로젝트는 한 번 실행될 때 아래 순서로 브리핑을 생성합니다.
 
-- `Yahoo Finance RSS 수집`: 빠르게 시작하기 좋은 소스입니다.
-- `OpenAI 요약/판별`: 기사 본문을 한국어 3줄 요약 + 호재/악재/중립 판별로 처리하기 좋습니다.
-- `JSON 중복 제거`: 로컬 실행에는 적합합니다.
-- `Discord Webhook 전송`: 구현이 단순하고 운영하기 쉽습니다.
-- `GitHub Actions 자동화`: 정시 실행에 적합합니다.
+1. 미국/한국 시장 브리핑
+- 미국 시장 주요 흐름 요약
+- 한국 시장 주요 흐름 요약
+- 핵심 동인과 리스크 정리
 
-중요한 보완점:
+2. 강한 섹터 / 약한 섹터
+- 미국 시장 섹터 관련 뉴스 기반으로 강세/약세 섹터 요약
 
-- GitHub Actions는 실행할 때마다 새 환경을 쓰므로, 중복 제거용 JSON을 저장소에 다시 커밋하지 않으면 이전 기록이 유지되지 않습니다.
-- 이 프로젝트는 그 문제를 해결하기 위해 `data/sent_articles.json`을 워크플로우에서 자동 커밋하도록 구성했습니다.
+3. 관심종목 브리핑
+- `WATCHLIST`에 있는 종목별 최신 뉴스 종합 요약
+- 종목당 기사 여러 개를 모아서 메시지 1개로 전송
+
+## 동작 방식
+
+- Yahoo Finance RSS에서 뉴스 수집
+- 기사 링크 본문 추출
+- OpenAI API로 한국어 요약 생성
+- 이미 보낸 기사 URL은 `data/sent_articles.json`에 저장
+- Discord Webhook으로 브리핑 전송
+- GitHub Actions가 정해진 시각에 자동 실행
+
+## 중요한 설계 포인트
+
+GitHub Actions는 매 실행마다 새 환경에서 실행되므로, 중복 전송 방지 기록을 저장소에 다시 커밋하지 않으면 이전 전송 기록이 유지되지 않습니다.
+
+이 프로젝트는 실행 후 `data/sent_articles.json`이 변경되면 자동 커밋하도록 구성되어 있습니다.
 
 ## 폴더 구조
 
 ```text
 .
+├── .env
 ├── .env.example
 ├── .github/workflows/run-bot.yml
 ├── data/sent_articles.json
@@ -44,52 +61,111 @@ Requires-Dist: trafilatura>=1.9.0
     ├── dedupe.py
     ├── fetcher.py
     ├── main.py
+    ├── market.py
     ├── notifier.py
     └── summarizer.py
 ```
 
 ## 빠른 시작
 
+### 로컬 실행
+
 ```bash
 python3 -m venv .venv
 source .venv/bin/activate
 pip install -e .
-cp .env.example .env
 python -m stock_news_bot.main
 ```
 
+### GitHub Actions 실행
+
+- 저장소에 push
+- GitHub Secrets 등록
+- `Actions > Run Stock News Bot > Run workflow`로 수동 테스트
+- 이후 스케줄에 따라 자동 실행
+
 ## 환경변수
 
+필수:
 - `OPENAI_API_KEY`: OpenAI API 키
-- `OPENAI_MODEL`: 사용할 모델명. 기본값 예시는 `gpt-5-mini`
-- `DISCORD_WEBHOOK_URL`: Discord Incoming Webhook URL
-- `WATCHLIST`: 쉼표로 구분한 관심 종목. 예: `NVDA,QQQ,TSLA`
-- `MAX_ARTICLES_PER_SYMBOL`: 종목당 최대 처리 기사 수
-- `REQUEST_TIMEOUT_SECONDS`: HTTP 요청 타임아웃
+- `DISCORD_WEBHOOK_URL`: Discord Webhook URL
+- `WATCHLIST`: 관심 종목 목록. 예: `NVDA,QQQ,AAPL,SPY,GOOGL`
 
-## GitHub Actions 설정
+선택:
+- `OPENAI_MODEL`: 사용할 모델명. 기본값 `gpt-5-mini`
+- `MAX_ARTICLES_PER_SYMBOL`: 관심종목당 최대 기사 수. 기본값 `5`
+- `REQUEST_TIMEOUT_SECONDS`: 요청 타임아웃. 기본값 `20`
 
-GitHub 저장소의 `Settings > Secrets and variables > Actions`에 아래 시크릿을 등록하세요.
+시장/섹터 브리핑 관련 선택값:
+- `US_MARKET_SYMBOLS`: 미국 시장 브리핑 대상. 기본값 `SPY,QQQ,DIA,IWM,^VIX,^TNX`
+- `KR_MARKET_SYMBOLS`: 한국 시장 브리핑 대상. 기본값 `EWY,^KS11,^KQ11,USDKRW=X`
+- `SECTOR_SYMBOLS`: 섹터 브리핑 대상. 기본값 `XLK,XLE,XLF,XLV,XLY,XLI,XLP,XLB,XLU,VNQ,SMH`
+- `MAX_MARKET_ARTICLES_PER_SYMBOL`: 시장 지표당 최대 기사 수. 기본값 `3`
+- `MAX_SECTOR_ARTICLES_PER_SYMBOL`: 섹터당 최대 기사 수. 기본값 `2`
 
+예시 파일은 [.env.example](/Users/sangwoo/Desktop/projects/crawling_news/.env.example:1)에 있습니다.
+
+## GitHub Secrets
+
+GitHub 저장소의 `Settings > Secrets and variables > Actions`에 아래 값을 등록하면 됩니다.
+
+필수:
 - `OPENAI_API_KEY`
-- `OPENAI_MODEL`
 - `DISCORD_WEBHOOK_URL`
 - `WATCHLIST`
+
+선택:
+- `OPENAI_MODEL`
+- `US_MARKET_SYMBOLS`
+- `KR_MARKET_SYMBOLS`
+- `SECTOR_SYMBOLS`
 - `MAX_ARTICLES_PER_SYMBOL`
+- `MAX_MARKET_ARTICLES_PER_SYMBOL`
+- `MAX_SECTOR_ARTICLES_PER_SYMBOL`
 - `REQUEST_TIMEOUT_SECONDS`
 
-현재 워크플로우는 `매시 정각 UTC` 기준으로 실행되도록 되어 있습니다.
+선택값은 등록하지 않아도 코드 기본값으로 동작합니다.
 
-한국 시간 기준으로 매시간에 맞추고 싶다면, GitHub Actions의 cron이 UTC 기준이라는 점을 감안해 조정하세요.
+## GitHub Actions 스케줄
 
-## 설계 메모
+현재 워크플로우는 한국 시간 기준 매일 오전 10시에 자동 실행됩니다.
 
-- Yahoo Finance RSS 링크 형식은 `https://feeds.finance.yahoo.com/rss/2.0/headline?s=NVDA&region=US&lang=en-US`
-- RSS 항목은 제목/링크 중심이라 본문 추출은 기사 링크 페이지를 추가 요청해 수행합니다.
-- 본문 추출이 실패하면 RSS 요약 텍스트를 폴백으로 사용합니다.
-- 중복 키는 기사 URL 기준입니다.
+워크플로우 내부 cron은 UTC 기준으로 아래처럼 설정되어 있습니다.
+
+- `0 1 * * *` = 10:00 KST
+
+## 실행 로그
+
+실행 시 콘솔에는 이런 흐름의 로그가 출력됩니다.
+
+- 시장 뉴스 수집 시작
+- 시장 브리핑 전송 또는 스킵
+- 섹터 뉴스 수집 시작
+- 섹터 브리핑 전송 또는 스킵
+- 관심종목별 브리핑 전송 또는 스킵
+- 최종 전송 개수 출력
+
+예:
+
+```text
+[INFO] Collecting US/KR market news...
+[INFO] Sent market briefing with 8 new article(s).
+[INFO] Collecting sector news...
+[INFO] Sent sector briefing with 6 new article(s).
+[INFO] Collecting watchlist news...
+[INFO] Sent NVDA briefing with 3 new article(s).
+[INFO] Skipped AAPL: no new watchlist articles.
+[INFO] Completed run. Sent 3 briefing(s).
+```
+
+## 주의사항
+
+- `.env`는 로컬 실행용입니다. GitHub Actions는 `.env`를 읽지 않고 GitHub Secrets를 사용합니다.
+- Discord Webhook URL은 외부에 노출되면 새로 발급받는 것이 안전합니다.
+- OpenAI API 키도 외부 노출 시 폐기 후 재발급하는 것이 좋습니다.
+- 현재 한국 시장/섹터 분석은 뉴스 기반 요약이며, 가격 데이터 기반 정밀 분석은 아직 포함되어 있지 않습니다.
 
 ## 참고
 
-- OpenAI는 신규 프로젝트에 Responses API 사용을 권장합니다: https://platform.openai.com/docs/guides/migrate-to-responses
-- GitHub Actions schedule은 UTC cron 문법을 사용합니다: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows
+- OpenAI Responses API: https://platform.openai.com/docs/guides/migrate-to-responses
+- GitHub Actions schedule: https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows

@@ -5,6 +5,7 @@ src/stock_news_bot/config.py
 src/stock_news_bot/dedupe.py
 src/stock_news_bot/fetcher.py
 src/stock_news_bot/main.py
+src/stock_news_bot/market.py
 src/stock_news_bot/notifier.py
 src/stock_news_bot/summarizer.py
 src/stock_news_discord_bot.egg-info/PKG-INFO

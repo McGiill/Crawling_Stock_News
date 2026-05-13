@@ -42,6 +42,7 @@ def build_market_message(
     summary_lines: list[str],
     us_market: str,
     kr_market: str,
+    exchange_rate: str,
     key_driver: str,
     risk_factor: str,
 ) -> str:
@@ -51,6 +52,7 @@ def build_market_message(
         f"핵심 흐름: {headline}\n"
         f"미국 시장: {us_market}\n"
         f"한국 시장: {kr_market}\n"
+        f"환율: {exchange_rate}\n"
         f"핵심 동인: {key_driver}\n"
         f"리스크: {risk_factor}\n"
         f"요약:\n{summary_block}"
@@ -140,6 +142,7 @@ def main() -> int:
                     summary_lines=market_summary.summary_lines,
                     us_market=market_summary.us_market,
                     kr_market=market_summary.kr_market,
+                    exchange_rate=market_summary.exchange_rate,
                     key_driver=market_summary.key_driver,
                     risk_factor=market_summary.risk_factor,
                 ),

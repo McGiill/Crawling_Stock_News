@@ -1,4 +1,11 @@
 {
+  "http://www.etf.com/sections/daily-etf-flows/etf-fund-flows-may-5-2026?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss": {
+    "published_at": "2026-05-05T21:00:04+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "IWM",
+    "title": "ETF Fund Flows as of May 5, 2026"
+  },
   "http://www.etf.com/sections/daily-etf-flows/us-equities-remain-king-diversification-plays-grow?utm_source=yahoo-finance&utm_medium=rss&utm_campaign=yahoo-finance-rss&.tsrc=rss": {
     "published_at": "2026-05-01T21:00:26+00:00",
     "sent_at": "2026-05-04T05:15:04.580107+00:00",
@@ -125,6 +132,48 @@
     "symbol": "QQQ",
     "title": "Why Growth Investors Are Ditching FELG for the NASDAQ-100’s 9.74% Edge"
   },
+  "https://247wallst.com/investing/2026/05/06/71-of-stocks-fail-to-beat-the-market-heres-how-to-find-the-4-that-create-real-wealth/?.tsrc=rss": {
+    "published_at": "2026-05-06T19:26:59+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "SPY",
+    "title": "71% of Stocks Fail to Beat the Market. Here’s How to Find the 4% That Create Real Wealth"
+  },
+  "https://247wallst.com/investing/2026/05/06/airr-pave-and-xli-which-reshoring-etf-wins-as-factories-return-home/?.tsrc=rss": {
+    "published_at": "2026-05-06T17:35:46+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLI",
+    "title": "AIRR, PAVE, and XLI: Which Reshoring ETF Wins as Factories Return Home"
+  },
+  "https://247wallst.com/investing/2026/05/06/cboe-vix-slides-toward-17-as-oil-retreat-and-tech-stock-surge-restore-risk-appetite/?.tsrc=rss": {
+    "published_at": "2026-05-06T14:08:56+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "^VIX",
+    "title": "CBOE VIX Slides Toward 17 as Oil Retreat and Tech Stock Surge Restore Risk Appetite"
+  },
+  "https://247wallst.com/investing/2026/05/06/portfolio-manager-reveals-how-selling-a-19-bagger-too-early-changed-his-investment-philosophy-forever/?.tsrc=rss": {
+    "published_at": "2026-05-06T18:15:56+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "SPY",
+    "title": "Portfolio Manager Reveals How Selling a 19-Bagger Too Early Changed His Investment Philosophy Forever"
+  },
+  "https://247wallst.com/investing/2026/05/06/semiconductor-leaders-soxx-smh-and-ftxl-are-crushing-it-on-ai-infrastructure-demand/?.tsrc=rss": {
+    "published_at": "2026-05-06T18:54:40+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "SMH",
+    "title": "Semiconductor Leaders SOXX, SMH, and FTXL Are Crushing It on AI Infrastructure Demand"
+  },
+  "https://247wallst.com/investing/2026/05/06/this-boring-utility-etf-just-became-a-stealth-ai-play-and-its-up-20/?.tsrc=rss": {
+    "published_at": "2026-05-06T13:28:01+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLU",
+    "title": "This Boring Utility ETF Just Became a Stealth AI Play, and It’s Up 20%"
+  },
   "https://247wallst.com/personal-finance/2026/04/22/jeffrey-hirsch-predicts-dow-62430-by-2030-heres-what-that-means-for-your-portfolio/?.tsrc=rss": {
     "published_at": "2026-04-22T15:07:06+00:00",
     "sent_at": "2026-04-23T05:59:37.903360+00:00",
@@ -146,12 +195,26 @@
     "symbol": "SPY",
     "title": "A $300,000 Annuity Guarantees $1,900 a Month for Life, but Here Is What Retirees Are Giving Up"
   },
+  "https://247wallst.com/personal-finance/2026/05/06/a-500000-reit-portfolio-that-pays-you-rent-without-owning-a-single-property/?.tsrc=rss": {
+    "published_at": "2026-05-06T18:53:14+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "VNQ",
+    "title": "A $500,000 REIT Portfolio That Pays You Rent Without Owning a Single Property"
+  },
   "https://beincrypto.com/ai-capex-semiconductor-etfs-not-crypto/?.tsrc=rss": {
     "published_at": "2026-05-03T19:30:26+00:00",
     "sent_at": "2026-05-04T05:15:52.407111+00:00",
     "source": "Yahoo Finance RSS",
     "symbol": "GOOGL",
     "title": "AI Capex Boom Drives Hottest ETF Trade Into Semiconductors, Not Crypto"
+  },
+  "https://finance.yahoo.com/economy/articles/markets-sleepwalking-recession-etfs-portfolio-154700538.html?.tsrc=rss": {
+    "published_at": "2026-05-06T15:47:00+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLU",
+    "title": "Are Markets Sleepwalking Into Recession? ETFs for Portfolio Resilience"
   },
   "https://finance.yahoo.com/economy/policy/articles/9-trillion-pouring-american-manufacturing-220000435.html?.tsrc=rss": {
     "published_at": "2026-05-03T22:00:00+00:00",
@@ -174,6 +237,13 @@
     "symbol": "^TNX",
     "title": "Treasury Yields Steady After Brent Spike"
   },
+  "https://finance.yahoo.com/m/34f3656a-c783-3569-8cec-05c851721fea/%24100-oil-could-be-here-to.html?.tsrc=rss": {
+    "published_at": "2026-05-06T20:29:00+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLE",
+    "title": "$100 Oil Could Be Here to Stay, Whatever Happens With the Peace Deal"
+  },
   "https://finance.yahoo.com/m/3b54e766-1bc2-350b-9f36-d1cc1b7d9a57/nasdaq-slides.-earnings-fail.html?.tsrc=rss": {
     "published_at": "2026-04-23T20:01:43+00:00",
     "sent_at": "2026-04-24T02:52:55.041008+00:00",
@@ -195,6 +265,13 @@
     "symbol": "NVDA",
     "title": "Review & Preview: Earnings Storm"
   },
+  "https://finance.yahoo.com/m/ade25efd-e31f-312d-81ae-beccc1445da9/semi-stocks-are-flying.-why.html?.tsrc=rss": {
+    "published_at": "2026-05-06T18:36:00+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "SMH",
+    "title": "Semi Stocks Are Flying. Why Skyworks Solutions Is Getting Crushed."
+  },
   "https://finance.yahoo.com/m/b28d41ea-498b-3f8d-8f51-446058fe3ba1/10-year-treasury-yield-nears.html?.tsrc=rss": {
     "published_at": "2026-04-29T19:21:40+00:00",
     "sent_at": "2026-05-04T06:02:29.065876+00:00",
@@ -208,6 +285,13 @@
     "source": "Yahoo Finance RSS",
     "symbol": "AAPL",
     "title": "Dow Jones Futures: Trump Says U.S. To 'Guide' Ships Through Hormuz"
+  },
+  "https://finance.yahoo.com/m/dce59910-b622-3166-8087-84aba5d2e813/international-paper-nears-its.html?.tsrc=rss": {
+    "published_at": "2026-05-05T14:29:00+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLB",
+    "title": "International Paper Nears Its Monthly Support Zone. Opportunity for a Bounce?"
   },
   "https://finance.yahoo.com/m/ecefa965-fcd8-3695-a1ee-9de86ce5012a/the-s%26p-500-just-had-its-best.html?.tsrc=rss": {
     "published_at": "2026-05-01T17:17:00+00:00",
@@ -244,6 +328,13 @@
     "symbol": "VNQ",
     "title": "3 Best Vanguard Dividend ETFs for Reliable Passive Income in 2026"
   },
+  "https://finance.yahoo.com/markets/stocks/articles/3-leveraged-etf-areas-april-160000712.html?.tsrc=rss": {
+    "published_at": "2026-05-04T16:00:00+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "DIA",
+    "title": "3 Leveraged ETF Areas of April That Are Up At least 150%"
+  },
   "https://finance.yahoo.com/markets/stocks/articles/apple-80-trillion-thats-shadow-233105955.html?.tsrc=rss": {
     "published_at": "2026-04-22T23:31:05+00:00",
     "sent_at": "2026-04-23T05:58:18.587092+00:00",
@@ -257,6 +348,13 @@
     "source": "Yahoo Finance RSS",
     "symbol": "AAPL",
     "title": "Apple Is Changing The Rules Right Before Tim Cook Exits"
+  },
+  "https://finance.yahoo.com/markets/stocks/articles/best-performing-etfs-april-120000860.html?.tsrc=rss": {
+    "published_at": "2026-05-05T12:00:00+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "DIA",
+    "title": "Best-Performing ETFs of April"
   },
   "https://finance.yahoo.com/markets/stocks/articles/best-performing-leveraged-etfs-last-120000570.html?.tsrc=rss": {
     "published_at": "2026-04-21T12:00:00+00:00",
@@ -272,12 +370,26 @@
     "symbol": "QQQ",
     "title": "Exchange-Traded Funds Advance as US Equities Rise After Midday Friday"
   },
+  "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-122241417.html?.tsrc=rss": {
+    "published_at": "2026-05-05T12:22:41+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "IWM",
+    "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Tuesday Amid Corporate Earnings Rush"
+  },
   "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-122608330.html?.tsrc=rss": {
     "published_at": "2026-04-30T12:26:08+00:00",
     "sent_at": "2026-05-04T06:03:17.723564+00:00",
     "source": "Yahoo Finance RSS",
     "symbol": "XLI",
     "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Thursday Amid Big Tech Earnings, Economic Data"
+  },
+  "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-123233630.html?.tsrc=rss": {
+    "published_at": "2026-05-06T12:32:33+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "IWM",
+    "title": "Exchange-Traded Funds, Equity Futures Higher Pre-Bell Wednesday Amid Potential US-Iran Truce"
   },
   "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-equity-futures-131452787.html?.tsrc=rss": {
     "published_at": "2026-04-23T13:14:52+00:00",
@@ -299,6 +411,13 @@
     "source": "Yahoo Finance RSS",
     "symbol": "QQQ",
     "title": "Exchange-Traded Funds Lower as US Equities Fall After Midday"
+  },
+  "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-171312651.html?.tsrc=rss": {
+    "published_at": "2026-05-06T17:13:12+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "QQQ",
+    "title": "Exchange-Traded Funds Rise as US Equities Climb After Midday"
   },
   "https://finance.yahoo.com/markets/stocks/articles/exchange-traded-funds-rise-us-171619041.html?.tsrc=rss": {
     "published_at": "2026-04-22T17:16:19+00:00",
@@ -328,6 +447,13 @@
     "symbol": "AAPL",
     "title": "Nasdaq, S&P 500 Notch Peaks as Earnings Fuel Optimism"
   },
+  "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-afternoon-174304886.html?.tsrc=rss": {
+    "published_at": "2026-05-06T17:43:04+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLP",
+    "title": "Sector Update: Consumer Stocks Mixed in Afternoon Trading"
+  },
   "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-mixed-afternoon-194247951.html?.tsrc=rss": {
     "published_at": "2026-05-01T19:42:47+00:00",
     "sent_at": "2026-05-04T06:03:17.723564+00:00",
@@ -342,12 +468,33 @@
     "symbol": "XLP",
     "title": "Sector Update: Consumer Stocks Mixed Friday Afternoon"
   },
+  "https://finance.yahoo.com/markets/stocks/articles/sector-consumer-stocks-rise-afternoon-194711681.html?.tsrc=rss": {
+    "published_at": "2026-05-06T19:47:11+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLP",
+    "title": "Sector Update: Consumer Stocks Rise Late Afternoon"
+  },
   "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-decline-afternoon-200219857.html?.tsrc=rss": {
     "published_at": "2026-05-01T20:02:19+00:00",
     "sent_at": "2026-05-04T06:03:17.723564+00:00",
     "source": "Yahoo Finance RSS",
     "symbol": "XLF",
     "title": "Sector Update: Financial Stocks Decline Late Afternoon"
+  },
+  "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-higher-afternoon-195514912.html?.tsrc=rss": {
+    "published_at": "2026-05-06T19:55:14+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLF",
+    "title": "Sector Update: Financial Stocks Higher Late Afternoon"
+  },
+  "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-higher-wednesday-175817722.html?.tsrc=rss": {
+    "published_at": "2026-05-06T17:58:17+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLF",
+    "title": "Sector Update: Financial Stocks Higher Wednesday Afternoon"
   },
   "https://finance.yahoo.com/markets/stocks/articles/sector-financial-stocks-mixed-friday-181001486.html?.tsrc=rss": {
     "published_at": "2026-05-01T18:10:01+00:00",
@@ -384,6 +531,13 @@
     "symbol": "XLU",
     "title": "Stock Market News for May 1, 2026"
   },
+  "https://finance.yahoo.com/markets/stocks/articles/stock-market-news-may-6-132800172.html?.tsrc=rss": {
+    "published_at": "2026-05-06T13:28:00+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "^VIX",
+    "title": "Stock Market News for May 6, 2026"
+  },
   "https://finance.yahoo.com/markets/stocks/articles/why-adobe-adbe-stock-today-054123854.html?.tsrc=rss": {
     "published_at": "2026-04-23T05:41:23+00:00",
     "sent_at": "2026-04-23T05:53:35.556536+00:00",
@@ -412,12 +566,33 @@
     "symbol": "AAPL",
     "title": "Seoul, Taipei hit records as Asian stocks track Wall St tech rally"
   },
+  "https://finance.yahoo.com/sectors/energy/articles/sector-energy-stocks-fall-wednesday-200522834.html?.tsrc=rss": {
+    "published_at": "2026-05-06T20:05:22+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLE",
+    "title": "Sector Update: Energy Stocks Fall Wednesday"
+  },
+  "https://finance.yahoo.com/sectors/healthcare/articles/sector-health-care-stocks-advance-195230873.html?.tsrc=rss": {
+    "published_at": "2026-05-06T19:52:30+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLV",
+    "title": "Sector Update: Health Care Stocks Advance Late Afternoon"
+  },
   "https://finance.yahoo.com/sectors/healthcare/articles/sector-health-care-stocks-gain-194240236.html?.tsrc=rss": {
     "published_at": "2026-04-30T19:42:40+00:00",
     "sent_at": "2026-05-04T06:03:17.723564+00:00",
     "source": "Yahoo Finance RSS",
     "symbol": "XLV",
     "title": "Sector Update: Health Care Stocks Gain Late Afternoon"
+  },
+  "https://finance.yahoo.com/sectors/healthcare/articles/sector-health-care-stocks-mixed-174543093.html?.tsrc=rss": {
+    "published_at": "2026-05-06T17:45:43+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLV",
+    "title": "Sector Update: Health Care Stocks Mixed Wednesday Afternoon"
   },
   "https://finance.yahoo.com/sectors/technology/articles/ai-brings-foxconn-chance-cut-210007424.html?.tsrc=rss": {
     "published_at": "2026-04-23T21:00:07+00:00",
@@ -468,6 +643,13 @@
     "symbol": "GOOGL",
     "title": "Microsoft bets big on AI in Australia with $18 billion investment"
   },
+  "https://finance.yahoo.com/video/space-etfs-prepping-liftoff-ahead-161500971.html?.tsrc=rss": {
+    "published_at": "2026-05-06T16:15:00+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "QQQ",
+    "title": "The space ETFs prepping for liftoff ahead of SpaceX IPO"
+  },
   "https://uk.finance.yahoo.com/news/ftse-100-live-middle-east-conflict-iran-war-085910922.html?.tsrc=rss": {
     "published_at": "2026-03-24T08:59:10+00:00",
     "sent_at": "2026-05-04T06:02:29.065876+00:00",
@@ -495,6 +677,20 @@
     "source": "Yahoo Finance RSS",
     "symbol": "QQQ",
     "title": "Sandisk Just Joined the Nasdaq-100. Should You Buy SNDK Stock Here?"
+  },
+  "https://www.barchart.com/story/news/1736280/positioning-for-a-big-move-sbux-long-straddle-trade-idea?.tsrc=rss": {
+    "published_at": "2026-05-06T11:00:02+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "^VIX",
+    "title": "Positioning for a Big Move: SBUX Long Straddle Trade Idea"
+  },
+  "https://www.barchart.com/story/news/1744421/what-are-wall-street-analysts-target-price-for-3m-company-stock?.tsrc=rss": {
+    "published_at": "2026-05-06T14:48:40+00:00",
+    "sent_at": "2026-05-07T05:37:34.108133+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "XLI",
+    "title": "What Are Wall Street Analysts' Target Price for 3M Company Stock?"
   },
   "https://www.fool.com/coverage/etfs/2026/04/23/spy-vs-figb-spdr-s-and-p-500-etf-provides-equity-based-growth-while-fidelity-bond-etf-offers-a-higher-yield/?.tsrc=rss": {
     "published_at": "2026-04-23T16:10:54+00:00",
@@ -656,6 +852,13 @@
     "source": "Yahoo Finance RSS",
     "symbol": "AAPL",
     "title": "VeriSign Q1 Earnings Call Highlights"
+  },
+  "https://www.marketbeat.com/stock-ideas/3-emerging-markets-etfs-to-maximize-exposure-to-high-potential-countries/?utm_source=yahoofinance&utm_medium=yahoofinance&.tsrc=rss": {
+    "published_at": "2026-05-04T11:10:00+00:00",
+    "sent_at": "2026-05-07T05:36:51.716907+00:00",
+    "source": "Yahoo Finance RSS",
+    "symbol": "EWY",
+    "title": "3 Emerging Markets ETFs to Maximize Exposure to High-Potential Countries"
   },
   "https://www.thestreet.com/investing/stocks/microsoft-headquarters?.tsrc=rss": {
     "published_at": "2026-04-24T00:29:29+00:00",
